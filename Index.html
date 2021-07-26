@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Hot Plotting</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Stephanie Kobakian" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Hot Plotting
+## Beyond the surface of visual displays
+### Stephanie Kobakian
+### 2021/07/27
+
+---
+
+
+
+
+
+# Hi, I'm Steph
+
+&lt;img src="figures/husband.jpg" width="546" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Masters by Research
+
+## Prof. Di Cook
+## Prof. Kerrie Mengersen
+## Dr Earl Duncan 
+
+&lt;img src="figures/di-cook.png" style="position:absolute;top:500px;left:60px;height:100px;width:75px;" /&gt;
+
+&lt;img src="figures/kerrie-mengersen.jpg" style="position:absolute;top:500px;left:200px;height:100px;width:75px;" /&gt;
+
+&lt;img src="figures/earl-duncan.png" style="position:absolute;top:500px;left:335px;height:100px;width:75px;" /&gt;
+
+&lt;img src="figures/acems_logo.jpg" style="position:absolute;top:500px;right:250px;height:75px;width:175px;" /&gt;
+
+&lt;img src="figures/monash_crest.jpg" style="position:absolute;top:500px;right:150px;height:75px;width:75px;" /&gt;
+
+&lt;img src="figures/qut_crest.png" style="position:absolute;top:500px;right:50px;height:75px;width:75px;" /&gt;
+
+&lt;img src="figures/australia_all cancer.png" style="position:absolute;top:100px;right:50px;height:250px;width:450px;" /&gt;
+
+
+
+---
+
+
+#What is the point of visualisation?
+
+--
+
+
+##Communicate insights
+
+
+
+
+--
+
+&lt;img src="https://media.giphy.com/media/yWS2itifUpxja/giphy.gif" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: centerr
+
+# How hard can it be?
+
+![](figures/badviz1.png)
+
+
+---
+
+class: center
+
+# How hard can it be?
+
+![](figures/badviz2.jpg)
+
+---
+
+class: inverse, center, middle
+![](https://media.giphy.com/media/xUA7bcUzBNSLC8Zy3C/giphy.gif)
+
+---
+
+# We have some data
+
+## Let's ask ourselves:
+
+- What is this data?
+- Do I know what insights I have?
+- What is the appropriate visual display?
+
+
+---
+
+# Scrape LGA daily cases in NSW
+
+
+- *What is this data?*
+COVID LIVE: Active cases, daily in each LGA
+
+- *Do I know what insights I have?*
+There are some LGA heavily affected in the recent outbreak
+
+- *What is the appropriate visual display?*
+
+
+&lt;img src="figures/covidlive.PNG" width="550" style="display: block; margin: auto;" /&gt;
+
+
+
+
+
+
+---
+
+# Let's get started
+
+![](runapp27072021_files/figure-html/lgacovid-1.png)&lt;!-- --&gt;
+
+## We can do better
+
+---
+
+# This gets us closer to our insight
+
+![](runapp27072021_files/figure-html/lgacovid2-1.png)&lt;!-- --&gt;
+
+
+---
+
+# We have improved it, incrementally 
+
+![](runapp27072021_files/figure-html/lgacovid3-1.png)&lt;!-- --&gt;
+
+
+---
+
+# Ridge plot with ggridges
+
+![](runapp27072021_files/figure-html/lgaridge1-1.png)&lt;!-- --&gt;
+
+
+---
+
+# We have arrived at our insights
+
+## But, there is more we can do
+
+![](runapp27072021_files/figure-html/lgaridge2-1.png)&lt;!-- --&gt;
+
+
+---
+
+
+# Let's make a map
+
+
+
+![](runapp27072021_files/figure-html/map-1.png)&lt;!-- --&gt;
+
+--
+
+&lt;img src="figures/whatisthis.png" style="position:absolute;top:150px;right:50px;height:120px;width:150px;" /&gt;
+
+--
+
+
+&lt;img src="figures/Lord+Howe+Island+Aerial+View.jpg" style="position:absolute;top:375px;right:50px;height:225px;width:300px;" /&gt;
+
+---
+
+![](runapp27072021_files/figure-html/map1-1.png)&lt;!-- --&gt;
+
+
+
+---
+
+# With some data
+
+
+
+
+![](runapp27072021_files/figure-html/covidmap-1.png)&lt;!-- --&gt;
+
+---
+
+
+class: inverse, center
+
+# Do we have a map?
+
+--
+
+## Yes, but we can do better
+
+
+---
+
+#Improve graphical elegance 
+
+
+Prof Di Cook presented these in her Data Modelling and Computing Course:
+https://ebsmonash.shinyapps.io/lecture4b_visualisation/
+
+.pull-left[
+
+- Colour palettes
+- Colour blindness
+- Pre-attentiveness
+- Proximity
+- Themeing
+- Interactivity
+]
+
+
+---
+
+#Colour palettes
+
+ - Qualitative: categorical variables
+ - Sequential: low to high numeric values
+ - Diverging: negative to positive values
+
+
+&lt;img src="figures/colours.png" width="737" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Colour blindness
+
+![](runapp27072021_files/figure-html/colourb-1.png)&lt;!-- --&gt;
+
+
+---
+
+# Colour blindness
+
+![](runapp27072021_files/figure-html/colourb2-1.png)&lt;!-- --&gt;
+
+
+---
+
+#Pre-attentive
+
+![](runapp27072021_files/figure-html/prea-1.png)&lt;!-- --&gt;
+
+---
+
+#Pre-attentive
+
+![](runapp27072021_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+
+
+---
+
+#Proximity
+
+![](runapp27072021_files/figure-html/prox1-1.png)&lt;!-- --&gt;
+
+---
+
+#Proximity
+
+![](runapp27072021_files/figure-html/prox2-1.png)&lt;!-- --&gt;
+
+
+---
+
+# How do we do this in R?
+
+## Make a theme!
+
+---
+
+#*Goal:* Maximise the data-ink ratio
+
+##*What is Data-Ink?* The non-erasable core of a graphic.
+
+
+--
+
+##*Solution:* Erase redundant and non-data-ink
+
+---
+
+#Let's have a go!
+
+![](runapp27072021_files/figure-html/covidmap1-1.png)&lt;!-- --&gt;
+
+
+---
+
+# Colour palettes
+
+![](runapp27072021_files/figure-html/covidmap2-1.png)&lt;!-- --&gt;
+
+---
+
+# Erase the non-data ink
+
+![](runapp27072021_files/figure-html/covidmap3-1.png)&lt;!-- --&gt;
+
+---
+
+# Move the legend
+
+![](runapp27072021_files/figure-html/covidmap4-1.png)&lt;!-- --&gt;
+
+---
+
+# Give it a title
+
+![](runapp27072021_files/figure-html/covidmap5-1.png)&lt;!-- --&gt;
+
+---
+
+# Give context in the title
+
+![](runapp27072021_files/figure-html/covidmap6-1.png)&lt;!-- --&gt;
+
+---
+
+# Australian Cancer Atlas
+
+## It is hard to make one size fit all with a budget
+
+- Overall distribution in familiar geography
+- Colour scheme 
+- Supplementary visuals
+- Facilitate comparisons with pop ups
+
+---
+
+class: inverse, center, middle
+
+# Thanks for coming!
+
+![](https://media.giphy.com/media/M9NbzZjAcxq9jS9LZJ/giphy.gif)
+
+---
+
+# Where to from here?
+
+# For friends: runapp!
+
+# To learn more:
+[](alison.netlify.app/rlm-sad-plot-better/)
+[](https://ggplot2.tidyverse.org/reference/ggtheme.html)
+
+Naomi B Robbins: Creating More Effective Graphs
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"incrementalSlides": true,
+"countIncrementalSlides": false,
+"widescreen": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
