@@ -235,7 +235,6 @@ lga_covid %>% group_by(LGA) %>%
 
 # We have arrived at our insights
 
-## But, there is more we can do
 
 ```{r lgaridge2}
 library(ggridges)
