@@ -567,10 +567,10 @@ class: inverse, center, middle
 
 # Where to from here?
 
-# For friends: runapp!
+## For friends: runapp!
 
-# To learn more:
-[](alison.netlify.app/rlm-sad-plot-better/)
-[](https://ggplot2.tidyverse.org/reference/ggtheme.html)
+## To learn more:
+[Take a sad plot and make it better](alison.netlify.app/rlm-sad-plot-better/)
+[ggplot2 themes](https://ggplot2.tidyverse.org/reference/ggtheme.html)
 
 Naomi B Robbins: Creating More Effective Graphs
